@@ -11,6 +11,7 @@
     <description>shiro练习程序</description>
     <modules>
         <module>ini-realm</module>
+        <module>custom-realm</module>
     </modules>
 
     <properties>
