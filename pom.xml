@@ -13,6 +13,7 @@
         <module>ini-realm</module>
         <module>custom-realm</module>
         <module>strategy</module>
+        <module>jdbc-realm</module>
     </modules>
 
     <properties>
