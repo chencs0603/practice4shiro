@@ -12,6 +12,7 @@
     <modules>
         <module>ini-realm</module>
         <module>custom-realm</module>
+        <module>strategy</module>
     </modules>
 
     <properties>
