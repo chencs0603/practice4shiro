@@ -15,6 +15,7 @@
         <module>strategy</module>
         <module>jdbc-realm</module>
         <module>permissions</module>
+        <module>custom-permission</module>
     </modules>
 
     <properties>
