@@ -19,6 +19,7 @@
         <module>crypto</module>
         <module>web</module>
         <module>spring</module>
+        <module>springmvc</module>
     </modules>
 
     <properties>
