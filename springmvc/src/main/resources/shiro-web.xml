@@ -30,12 +30,16 @@
         </property>
     </bean>
 
-    <bean id="mapRealm" class="personal.chencs.practice.shiro.MapRealm" />
+    <bean id="staticRealm" class="personal.chencs.practice.shiro.StaticRealm" />
 
     <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
-        <property name="realm" ref="mapRealm"/>
+        <property name="realm" ref="staticRealm"/>
     </bean>
 
     <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+
+    <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+        <property name="securityManager" ref="securityManager"/>
+    </bean>
 
 </beans>
