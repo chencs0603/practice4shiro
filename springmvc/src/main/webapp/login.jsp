@@ -18,6 +18,9 @@
         if (exception.equals("org.apache.shiro.authc.UnknownAccountException")) {
             request.setAttribute("errorMsg", "username not exists");
         }
+        if (exception.equals("org.apache.shiro.authc.ExcessiveAttemptsException")) {
+            request.setAttribute("errorMsg", "the account is locked, please retry 10 min");
+        }
     }
 
 %>
