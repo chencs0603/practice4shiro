@@ -34,9 +34,7 @@ public class StaticRealm extends AuthorizingRealm {
 
         if (!"chencs".equals(username)) throw new UnknownAccountException("username not exists");
 
-        if (!"123456".equals(password)) throw new IncorrectCredentialsException("error password");
-
-        String cipherText = new Md5Hash(password, saltValue).toHex();
+        String cipherText = "eef3a22a128d5adb5699e3c7da7a6fc8";
 
         SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(username, cipherText, getName());
         info.setCredentialsSalt(ByteSource.Util.bytes(saltValue));
